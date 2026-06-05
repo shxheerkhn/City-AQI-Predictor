@@ -1,0 +1,22 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: pearls-aqi-api
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/PROJECT_ID/pearls-aqi-api:latest
+          env:
+            - name: APP_ENV
+              value: production
+            - name: AQI_FEATURE_STORE_BACKEND
+              value: local
+            - name: AQI_API_BASE_URL
+              value: https://pearls-aqi-api.example.com
+            - name: AQI_HAZARD_THRESHOLD
+              value: "200"
+            - name: AQI_FORECAST_HOURS
+              value: "72"
+            - name: API_ACCESS_TOKEN
+              value: ""

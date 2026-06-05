@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pearls-aqi-predictor"
+version = "0.1.0"
+description = "Enterprise-grade AQI forecasting platform"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["aqi_predictor*"]

@@ -1,0 +1,27 @@
+{
+  "model_name": "prophet_style",
+  "model_family": "statistical",
+  "feature_columns": [
+    "hour_of_day",
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "quarter",
+    "day_of_year",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "day_sin",
+    "day_cos",
+    "city_city_001",
+    "city_city_002",
+    "season_1"
+  ],
+  "hyperparameters": {
+    "residual_p90": 15.232542601276503,
+    "backtest_horizon_hours": 72
+  },
+  "sequence_window": 24,
+  "scaler": false
+}

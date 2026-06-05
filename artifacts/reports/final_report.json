@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-06-03T14:56:22.194378+00:00",
+  "evaluation_file": "evaluation_20260603145503.json",
+  "champion": {
+    "model_name": "prophet_style",
+    "model_family": "statistical",
+    "model_version": "20260603145503",
+    "artifact_path": "artifacts\\models\\prophet_style_20260603145503.joblib",
+    "metrics": {
+      "rmse": 15.639853197054018,
+      "mae": 11.194218530050295,
+      "r2": 0.38021060404989204,
+      "mape": 0.05107985760456523
+    },
+    "hyperparameters": {
+      "residual_p90": 15.639853197054018,
+      "backtest_horizon_hours": 72
+    },
+    "feature_columns": [
+      "hour_of_day",
+      "day_of_week",
+      "day_of_month",
+      "month",
+      "quarter",
+      "day_of_year",
+      "hour_sin",
+      "hour_cos",
+      "dow_sin",
+      "dow_cos",
+      "day_sin",
+      "day_cos",
+      "city_city_001",
+      "city_city_002",
+      "season_1"
+    ],
+    "trained_at": "2026-06-03T14:55:03.524145+00:00",
+    "city_scope": "global",
+    "is_champion": true
+  },
+  "comparison": [
+    {
+      "model_name": "prophet_style",
+      "rmse": 15.639853197054018,
+      "mae": 11.194218530050295,
+      "r2": 0.38021060404989204,
+      "mape": 0.05107985760456523
+    },
+    {
+      "model_name": "ridge_regression",
+      "rmse": 16.172415664422644,
+      "mae": 11.260480492234564,
+      "r2": 0.3372822737058664,
+      "mape": 0.051301464593659106
+    },
+    {
+      "model_name": "random_forest",
+      "rmse": 16.333401286910874,
+      "mae": 11.684663351751361,
+      "r2": 0.3240227790166611,
+      "mape": 0.05366202376260073
+    },
+    {
+      "model_name": "xgboost",
+      "rmse": 16.6231359319328,
+      "mae": 12.15607203838209,
+      "r2": 0.29982804791576434,
+      "mape": 0.05572621740298242
+    },
+    {
+      "model_name": "arima_style",
+      "rmse": 17.144832480070175,
+      "mae": 12.465309221895852,
+      "r2": 0.25519035983229177,
+      "mape": 0.056977219343633326
+    },
+    {
+      "model_name": "persistence_model",
+      "rmse": 19.743925874661326,
+      "mae": 15.491296046877164,
+      "r2": 0.01225276916618856,
+      "mape": 0.06878045807093108
+    },
+    {
+      "model_name": "mean_predictor",
+      "rmse": 21.570700196912963,
+      "mae": 16.8704413999317,
+      "r2": -0.17898229322798476,
+      "mape": 0.07754939667925641
+    },
+    {
+      "model_name": "lstm",
+      "rmse": 79.67791229789086,
+      "mae": 77.48506874137826,
+      "r2": -17.420893760642528,
+      "mape": 0.3314909176766812
+    },
+    {
+      "model_name": "gru",
+      "rmse": 180.46185100756972,
+      "mae": 179.5044358793672,
+      "r2": -93.49430182235395,
+      "mape": 0.7765635234727185
+    }
+  ],
+  "champion_recursive": {
+    "rmse": 15.639853197054018,
+    "mae": 11.194218530050295,
+    "r2": 0.38021060404989204,
+    "mape": 0.05107985760456523
+  },
+  "daily_recursive": {}
+}
